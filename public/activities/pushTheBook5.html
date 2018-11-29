@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>天天都过双11，好书免费读起来</title>
+        <script type="text/javascript">
+        !function (a, b) { function c() { var b = f.getBoundingClientRect().width; b / i > 540 && (b = 540 * i); var c = b / 10; f.style.fontSize = c + "px", k.rem = a.rem = c } var d, e = a.document, f = e.documentElement, g = e.querySelector('meta[name="viewport"]'), h = e.querySelector('meta[name="flexible"]'), i = 0, j = 0, k = b.flexible || (b.flexible = {}); if (g) { console.warn("将根据已有的meta标签来设置缩放比例"); var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/); l && (j = parseFloat(l[1]), i = parseInt(1 / j)) } else if (h) { var m = h.getAttribute("content"); if (m) { var n = m.match(/initial\-dpr=([\d\.]+)/), o = m.match(/maximum\-dpr=([\d\.]+)/); n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2))) } } if (!i && !j) { var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)), q = a.devicePixelRatio; i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i } if (f.setAttribute("data-dpr", i), !g) if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + j + ", maximum-scale=" + j + ", minimum-scale=" + j + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g); else { var r = e.createElement("div"); r.appendChild(g), e.write(r.innerHTML) } a.addEventListener("resize", function () { clearTimeout(d), d = setTimeout(c, 300) }, !1), a.addEventListener("pageshow", function (a) { a.persisted && (clearTimeout(d), d = setTimeout(c, 300)) }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function () { e.body.style.fontSize = 12 * i + "px" }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) { var b = parseFloat(a) * this.rem; return "string" == typeof a && a.match(/rem$/) && (b += "px"), b }, k.px2rem = function (a) { var b = parseFloat(a) / this.rem; return "string" == typeof a && a.match(/px$/) && (b += "rem"), b } }(window, window.lib || (window.lib = {}));
+    </script>
+    <script>
+        var _czc = _czc || [];
+        _czc.push(["_setAccount", "1260948588"]);
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            -webkit-overflow-scrolling: touch;
+            -webkit-text-size-adjust: 100%;
+            user-select: none;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page-themeweek-wraper {
+            font-size: 0;
+        }
+
+        .page-themeweek-wraper img {
+            width: 100%;
+        }
+    </style>
+    <script type="text/javascript" src="./bridge.js"></script>
+    <script type="text/javascript" src="./exposure.js"></script>
+</head>
+
+<body>
+    <div class="page-themeweek-wraper" id="J_pageThemeweekWraper">
+        <img src="./book-5/img-1.jpg">
+        <div class="books">
+            <img src="./book-5/img-2.jpg" data-exposure-pv="1" data-exposure-params="1006##-1|56ce9d06363f92a0072738dc##邪帝狂后：废材九小姐##推书活动##-1##-1##-1##1"
+                onclick="jumpBookDetail('邪帝狂后：废材九小姐','56ce9d06363f92a0072738dc','-1|56ce9d06363f92a0072738dc##邪帝狂后：废材九小姐##推书活动##-1##-1##-1##1')">
+
+            <img src="./book-5/img-3.jpg" data-exposure-pv="1" data-exposure-params="1006##-1|5b879365f4f6687e8fdd66ea##快穿之妲己的任务##推书活动##-1##-1##-1##2"
+                 onclick="jumpBookDetail('快穿之妲己的任务','5b879365f4f6687e8fdd66ea','-1|5b879365f4f6687e8fdd66ea##快穿之妲己的任务##推书活动##-1##-1##-1##2')">
+
+            <!-- <img src="./book-5/img-4.jpg" data-exposure-pv="1" data-exposure-params="1006##-1|5b188ae98659ea1aab8e5ab3##重生夫夫养家记##推书活动##-1##-1##-1##3"
+                 onclick="jumpBookDetail('重生夫夫养家记','5b188ae98659ea1aab8e5ab3','-1|5b188ae98659ea1aab8e5ab3##重生夫夫养家记##推书活动##-1##-1##-1##3')"> -->
+
+            <img src="./book-5/img-5.jpg" data-exposure-pv="1" data-exposure-params="1006##-1|59439b346915617d5fa836c7##惊世废材七小姐##推书活动##-1##-1##-1##4"
+                 onclick="jumpBookDetail('惊世废材七小姐','59439b346915617d5fa836c7','-1|59439b346915617d5fa836c7##惊世废材七小姐##推书活动##-1##-1##-1##4')">
+        </div>
+    </div>
+    <script>
+        window.onscroll = function (params) {
+            tools.setExposure()
+        }
+        function jumpBookDetail(bookName, id,code) {
+            var self = this;
+            _czc.push(["_trackEvent", "推书活动", "其他-点击", bookName, 1, "active"]);
+            HybridApi.request({
+                action: 'jump',
+                param: {
+                    "jumpType": "native",
+                    "pageType": "bookDetail",
+                    "id": id,
+                    "code":code,
+                }
+            });
+    
+        }
+    </script>
+    <script>
+         _czc.push(["_trackEvent", "推书活动", "访问-其他", "", 1, "active"]);  
+    </script>
+    <div style="display: none;">
+        <script src="https://s11.cnzz.com/z_stat.php?id=1260948588&web_id=1260948588" language="JavaScript"></script>
+    </div>
+</body>
+</html>
